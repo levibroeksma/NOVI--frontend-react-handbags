@@ -1,6 +1,6 @@
-function Button(props) {
+function Button({disabled, title}) {
     return (
-        <button>{props.title}</button>
+        <button type="button" disabled={disabled} onClick={() => console.log({title})}>{title}</button>
     )
 }
 
